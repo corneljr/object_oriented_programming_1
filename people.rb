@@ -1,5 +1,4 @@
 class People
-	attr_reader :name
 
 	def initialize(name)
 		@name = name
