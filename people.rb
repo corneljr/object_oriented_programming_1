@@ -22,8 +22,13 @@ class Instructor < People
 	end
 end
 
-chris = Instructor.new(Chris)
-chris.greeting
+chris = Instructor.new("Chris")
+puts chris.greeting
 
-christina = Student.new(Christina)
-christina.greeting
+christina = Student.new("Christina")
+puts christina.greeting
+
+puts chris.teach
+puts christina.learn
+
+# cannot call christina.teach because this is an instance method of the instructor class and christina is an instance of the student class
